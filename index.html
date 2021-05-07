@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Mahdy  </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <button onclick="myFunction()">Print Mahdy Resume</button>
+        <h1>Mahdy Adel Mohammed Hamdan</h1>
+
+        <h2 >my sammary:<span>I am studying computer science at An-Najah National University in my second year of study.</span></h2>
+
+        <div class="informations" id="informations" onmouseover="bigImg()" onmouseout="normalImg(this)">
+            <a id="informationsA"  href="https://www.facebook.com/mahdy.hamdan.129" target="_blank" >Facebook link</a>
+            <div class="myImg">
+                <img  src="mahdy2.jpg">
+                <br>
+                <img width="350" height="300"  src="mahdy.jpg">
+            </div>
+            <h3 >Education background:</h3>
+            <ol>
+                <li>Computer Hardware Repair.</li>
+                <li>I learned c++.</li>
+            </ol>  
+            <h4 >work experiences:</h4>
+            <ul>
+                <li>Work in programming.</li>
+                <li>Work in a supermarket.</li>
+            </ul> 
+            <h5 >hobbies:</h5>
+            <ul>
+                <li>football.</li>
+                <li>video games.</li>
+                <li>Take care of the roses. </li>
+                
+            </ul>
+        </div>
+
+        <script>
+            function myFunction()
+            {
+                alert(prompt("Welcome to Mahdy site, please let me know if you have any questions"));
+
+            }
+            function bigImg()
+            {
+                document.getElementById("informations").style.color = "green";
+                document.getElementById("informationsA").style.color = "green";
+            }
+            function normalImg()
+            {
+                document.getElementById("informations").style.color = "black";
+                document.getElementById("informationsA").style.color = "black";
+
+            }
+        </script>
+   
+<button onclick="document.location='Application.html'">Go to from</button>
+
+</body>
+</html>
